@@ -1,0 +1,31 @@
+using System;
+
+namespace LabFourThree
+{
+    class Furniture
+    {
+        static void Main(string[] args)
+        {
+            int PineTree = 1;
+            string PinePrice = string.Format("{0:c}", 100);
+            int OakTree = 2;
+            string OakPrice = string.Format("{0:c}", 285);
+
+            Console.WriteLine("Please Select No. 1 for a Pine tree or No. 2 for an Oak tree : ");
+            int SelectTree = Convert.ToInt32(Console.ReadLine());
+
+            if(SelectTree == PineTree)
+            {
+                Console.WriteLine("You have choosen a Pine Tree. The price is " + PinePrice);
+            } else if (SelectTree == OakTree)
+            {
+                Console.WriteLine("You have choosen a Pine Tree. The price is " + OakPrice);
+            } else
+            {
+                Console.WriteLine("Please enter a valid selection");
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
